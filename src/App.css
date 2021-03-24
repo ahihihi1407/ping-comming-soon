@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.logo {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.title > h1 {
+  color: var(--gray);
+  font-size: 40px;
+}
+
+.title > p {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.title > h1 > span {
+  font-weight: 700;
+  color: black;
+}
+
+.mail-container  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.mail-container > input {
+  padding: 1rem;
+  border-radius: 30px;
+  border: 1px solid var(--gray);
+  outline: none;
+  height: 2.75rem;
+  width: 20rem;
+}
+
+.warn-input {
+  box-shadow: 0 0 3px var(--light-red);
+}
+
+.mail-container > button {
+  background: var(--blue);
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 2.75rem;
+  border-radius: 30px;
+  box-shadow: 0 0 3px var(--blue);
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.mail-container > button:hover {
+  background: var(--pale-blue);
+  cursor: pointer;
+}
+
+.mail-warning {
+  padding-top: 10px;
+  padding-right: 200px;
+  font-style: italic;
+  font-size: 15px;
+  flex-basis: 100%;
+  color: var(--light-red);
+}
+
+.image-container > img {
+  width: 500px;
+  height: auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.icon-frame {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: var(--blue);
+  border: 1px solid #EAEAEA;
+  border-radius: 100px;
+  margin-left: 10px;
+}
+
+.icon-frame:hover {
+  box-shadow: 0 0 3px var(--blue);
+}
+
+.social-icon {
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: var(--main-blue-color);
+}
+
+@media(max-width: 1024px) {
+  .mail-container  {
+    display: flex;
+    flex-direction:  column;
+  }
+
+  .mail-container > button {
+    margin-top: 2rem;
+    width: 20rem;
+  }
+
+  .mail-warning {
+    padding-right: 0;
+  }
+}
